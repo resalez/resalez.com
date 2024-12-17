@@ -205,7 +205,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Analytics for developers can be better"
-                      : "Reselling,\nreinvented"}
+                      : "Reselling,\nreinvented."}
                   </h1>
                   <div
                     className={classNames(
@@ -216,7 +216,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                      : "Have deals come for you instead of looking for deals yourself."}
+                      : "Have deals come for you instead of looking for deals yourself"}
                   </div>
                   <Stack__
                     as={"div"}
@@ -259,9 +259,15 @@ function PlasmicHomepage__RenderFunc(props: {
                           "Learn More"
                         ) : (
                           <React.Fragment>
-                            <React.Fragment>
-                              {"In development on "}
-                            </React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontStyle: "italic" }}
+                            >
+                              {"In development"}
+                            </span>
+                            <React.Fragment>{" on "}</React.Fragment>
                             <span
                               className={
                                 "plasmic_default__all plasmic_default__span"
@@ -352,7 +358,7 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
                   ? "Powering with magnificant of Companies"
-                  : "Hopefully soon funded by EXIST"}
+                  : "Hopefully soon funded by EXIST."}
               </div>
             </div>
           </Stack__>
@@ -520,7 +526,7 @@ export const PlasmicHomepage = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "Home",
+      title: "Resalez",
       description: "",
       ogImageSrc: "",
       canonical: ""
